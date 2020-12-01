@@ -10,7 +10,7 @@ int main(int argc, const char * argv[])
 
 	printf("Data Structure Programming.. test\n");
 
-
+	printf("exercise github test \n");
 
 	return 0;
 }
