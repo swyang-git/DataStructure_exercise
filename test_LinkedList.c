@@ -42,17 +42,22 @@ int main()
 	// delete and free all nodes.. //
 	printf("// delete and free all nodes.. //\n");
 
-	count = SLL_getNodeCount(list);
-	for (int i = 0; i < count; ++i)
-	{
-		current = SLL_getNodeAt(list, i);
+	//count = SLL_getNodeCount(list);
+	//for (int i = 0; i < count; ++i)
+	//{
+	//	current = SLL_getNodeAt(list, i);
 
-		if (current != NULL)
-		{
-			SLL_removeNode(&list, current);
-			SLL_destroyNode(current);
-		}
-	}
+	//	if (current != NULL)
+	//	{
+	//		SLL_removeNode(&list, current);
+	//		SLL_destroyNode(current);
+	//	}
+	//}
+	SLL_destroyAllNode(list);
+	printf("// delete and free all nodes..? //\n");
+
+	int current_count = SLL_getNodeCount(list);
+	printf("List count : %d\n", current_count);
 
 	return 0;
 }
